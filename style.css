@@ -29,11 +29,15 @@
     padding-top: 25px;
 }
 
+
+
 #my_pictures {
     padding: 50px;
     font-family: Anton;
     color: orange;
     text-decoration: orange;
+    width: auto;
+    height: auto;
     width: auto;
     height: auto;
 }
@@ -43,29 +47,47 @@
     font-family: Anton;
     color: orange;
     text-decoration: orange;
+    width: auto;
+    height: auto;
 }
 
-#contact_me {
+#my_works {
     padding: 50px;
     font-family: Anton;
     color: orange;
     text-decoration: orange;
+    width: auto;
+    height: auto;
 }
 
 #my_pictures:hover {
     color: blue;
-    background: black;
+
     animation-delay: 3s;
+    width: auto;
+    height: auto;
 }
 
 #about:hover {
     color: blue;
-    background: black;
+
     animation-delay: 3s;
+    width: auto;
+    height: auto;
 }
 
-#contact_me:hover {
+#my_works:hover {
     color: blue;
-    background: black;
+
     animation-delay: 3s;
+    width: auto;
+    height: auto;
+}
+
+.slick {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding-top: 50px;
+
 }
