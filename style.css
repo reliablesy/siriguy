@@ -2,8 +2,6 @@
     border: 5px outset black;
     background-color: darkslategrey;
     position: relative;
-
-
 }
 
 .helloworld {
@@ -16,15 +14,58 @@
     margin: 0;
     padding-top: 50px;
 }
+
 .social-networks {
     color: white;
-    padding-left: 30px;
-
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    margin: 0;
 }
+
 .menu_container {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     padding-top: 25px;
+}
 
+#my_pictures {
+    padding: 50px;
+    font-family: Anton;
+    color: orange;
+    text-decoration: orange;
+    width: auto;
+    height: auto;
+}
 
+#about {
+    padding: 50px;
+    font-family: Anton;
+    color: orange;
+    text-decoration: orange;
+}
+
+#contact_me {
+    padding: 50px;
+    font-family: Anton;
+    color: orange;
+    text-decoration: orange;
+}
+
+#my_pictures:hover {
+    color: blue;
+    background: black;
+    animation-delay: 3s;
+}
+
+#about:hover {
+    color: blue;
+    background: black;
+    animation-delay: 3s;
+}
+
+#contact_me:hover {
+    color: blue;
+    background: black;
+    animation-delay: 3s;
 }
