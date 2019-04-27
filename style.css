@@ -111,8 +111,8 @@
 }
 
 .about_me_container {
-    background-color: orange;
-    height: 800px;
+    background: #f6d654 url(img/siriguy_background.jpeg)
+    height: auto;
     width: auto;
 }
 
