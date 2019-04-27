@@ -1,23 +1,37 @@
 
 .header-container {
-    border: 5px outset black;
-    background-color: darkslategrey;
-    position: relative;
+
 }
 
-.helloworld {
-    display: flex;
-    flex-direction: column;
+.my-photo {
     text-align: center;
-    font-family: 'Anton', sans-serif;
-    color: white;
-    font-size: 50px;
-    margin: 0;
-    padding-top: 50px;
+    padding-top: 20px;
 }
+.my-phto-s{
+    border: 2px black solid;
+    border-radius: 50%;
+    height: 351px;
+    width: 271px;
+
+}
+
+
+
+
+
+/*.helloworld {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*text-align: center;*/
+    /*font-family: 'Anton', sans-serif;*/
+    /*color: white;*/
+    /*font-size: 50px;*/
+    /*margin: 0;*/
+    /*padding-top: 50px;*/
+/*}*/
 
 .social-networks {
-    color: white;
+    color: orange;
     height: auto;
     width: auto;
     text-decoration: none;
@@ -92,3 +106,7 @@
     padding-top: 50px;
 
 }
+
+
+
+
