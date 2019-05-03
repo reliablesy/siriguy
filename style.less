@@ -1,5 +1,4 @@
 
-
 .header-container {
 
 }
@@ -8,6 +7,7 @@
   text-align: center;
   padding-top: 20px;
 }
+
 #my-phto-s {
   border: 2px black solid;
   border-radius: 50%;
@@ -18,30 +18,24 @@
 
 #my-photo:hover {
   transform: scale(1.1);
+  transition-duration: 1.5s;
 
 }
 
+.about-my-life-center {
+  h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+  }
 
-
-
-.about-my-life-center h2 {
-
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #000;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
+  span {
+    background: #fff;
+    padding: 0 10px;
+  }
 }
-
-.about-my-life-center span {
-  background:#fff;
-  padding:0 10px;
-
-}
-
-
-
-
 
 /*.helloworld {*/
 /*display: flex;*/
@@ -68,8 +62,6 @@
   padding-top: 25px;
 }
 
-
-
 #my_pictures {
   padding: 50px;
   font-family: Anton;
@@ -88,6 +80,13 @@
   text-decoration: orange;
   width: auto;
   height: auto;
+
+  &:hover {
+    color: blue;
+    animation-delay: 3s;
+    width: auto;
+    height: auto;
+  }
 }
 
 #my_works {
@@ -108,17 +107,8 @@
   transform: scale(0.7);
 }
 
-#about:hover {
-  color: blue;
-
-  animation-delay: 3s;
-  width: auto;
-  height: auto;
-}
-
 #my_works:hover {
   color: blue;
-
   animation-delay: 3s;
   width: auto;
   height: auto;
@@ -131,6 +121,7 @@
   padding-top: 50px;
 
 }
+
 #social-networks:hover {
   color: blue;
 }
@@ -142,12 +133,11 @@
 }
 
 #styding {
-  border: 3px black solid;
 
 }
 
 #styding:hover {
-background-color: yellow;
+  background-color: yellow;
   border-radius: 10%;
 }
 
@@ -158,16 +148,20 @@ background-color: yellow;
 }
 
 .marmishgor {
-padding-right: 250px;
+  padding-right: 250px;
 
 }
 
 .teisdomestio {
 
-
 }
 
 .andrei {
-padding-left: 250px;
+  padding-left: 250px;
 
 }
+
+
+
+
+

@@ -10,6 +10,7 @@
 }
 #my-photo:hover {
   transform: scale(1.1);
+  transition-duration: 1.5s;
 }
 .about-my-life-center h2 {
   width: 100%;
@@ -60,6 +61,12 @@
   width: auto;
   height: auto;
 }
+#about:hover {
+  color: blue;
+  animation-delay: 3s;
+  width: auto;
+  height: auto;
+}
 #my_works {
   padding: 50px;
   font-family: Anton;
@@ -74,12 +81,6 @@
   width: auto;
   height: auto;
   transform: scale(0.7);
-}
-#about:hover {
-  color: blue;
-  animation-delay: 3s;
-  width: auto;
-  height: auto;
 }
 #my_works:hover {
   color: blue;
@@ -100,9 +101,6 @@
   background: #f6d654 url(img/siriguy_background.jpeg);
   height: auto;
   width: auto;
-}
-#styding {
-  border: 3px black solid;
 }
 #styding:hover {
   background-color: yellow;
