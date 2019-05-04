@@ -2,108 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Siriguy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <!--Шрифты-->
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&amp;subset=cyrillic,cyrillic-ext,latin-ext"
           rel="stylesheet">
-
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.less">
-
-
 </head>
 
 <body>
 
-<header class="header-container">
-    <div id="my-photo">
+<div id="page">
+    <div id="page2">
+        <header class="header-container">
+            <div id="my-photo">
 
-        <img id="my-phto-s" src="img/siriguyheaderr.jpg"/>
+                <img id="my-phto-s" src="img/siriguyheaderr.jpg"/>
 
+            </div>
+            <!--<p class="helloworld">Siriguy</p>-->
+
+
+            <div style="display:flex">
+                <img style="display: flex; padding-left: 35px; margin-bottom: 10px; padding-right: 5px "
+                     src="img/md_5af2961470850.png" height="25" width="25"/>
+                <a href="https://www.instagram.com/siriguy_" id="social-networks">@ Siriguy_</a>
+            </div>
+
+        </header>
+
+        <div class="menu_container">
+
+            <div>
+                <a href="#mini_tools" id="my_works">Mini - tools</a>
+            </div>
+
+            <div>
+                <a href="#my_all_photo" id="my_pictures">My photos</a>
+            </div>
+
+            <div>
+                <a href="#scroll-study" class="about">About my life</a>
+            </div>
+
+        </div>
+
+        <div style="padding-top: 100px; padding-bottom: 25px;">
+            <div id="scroll-study" class="about-my-life-center">
+
+                <h2><span>Где я учусь</span></h2>
+
+            </div>
+        </div>
+
+        <div class="study">
+            <p class="study-text"> Я закончил 17 школу (лицей
+                попрошу) и захотел поступить в колледж <a href="http://csbc.edu.ua/">(Вот кстати сайт).</a> Учусь на
+                втором
+                курсе IT. Поступил на компьютерного инженера. Хотел когда-то стать программистом но немного со временем
+                отпало
+                желание.</p>
+        </div>
+
+        <div style="padding-top: 100px; padding-bottom: 25px;">
+            <div class="about-my-life-center">
+
+                <h2><span>Сайты в которых я поучаствовал</span></h2>
+
+            </div>
+        </div>
+
+        <div class="site_container">
+
+            <div class="okomedicas">
+                <a href="https://okomedikas.com/"><img style="border-radius: 20%; height: 150px; width: auto;"
+                                                       src="img/okomedicas.jpg"> </a>
+                <a href="#" style="text-decoration: none; color: orange;">
+                    <figcaption style="text-align: center"><a style="text-decoration: none; color: orange;"
+                                                              href="https://okomedikas.com/">okomedikas.com/</a>
+                    </figcaption>
+                </a>
+            </div>
+
+            <div class="flin">
+                <a href="https://fl.in.ua/"><img style="border-radius: 20%; height: 150px; width: 350px;"
+                                                 src="img/flin.jpg"> </a>
+                <a href="#" style="text-decoration: none; color: orange;">
+                    <figcaption style="text-align: center"><a style="text-decoration: none; color: orange;"
+                                                              href="https://fl.in.ua/">fl.in.ua/</a></figcaption>
+                </a>
+            </div>
+
+        </div>
+
+        <div style="padding-top: 100px; padding-bottom: 25px;">
+            <div class="about-my-life-center">
+
+                <h2><span>Мои фото</span></h2>
+
+            </div>
+        </div>
+
+        <div id="my_all_photo">
+            <div>
+                <a href="https://www.dropbox.com/sh/52cxy7qi1xh44om/AAACsGlk6eOGzFhKySJM521sa?dl=0"><img class="dropbox"
+                                                                                                         src="img/dropbox.jpg"></a>
+                <figcaption><a style="text-align: center; text-decoration: none; color: white; font-size: 30px"
+                               href="https://www.dropbox.com/sh/52cxy7qi1xh44om/AAACsGlk6eOGzFhKySJM521sa?dl=0">Мои Фото
+                    в Dropbox</a></figcaption>
+            </div>
+        </div>
+
+
+        <div style="padding-top: 100px; padding-bottom: 25px;">
+            <div class="about-my-life-center">
+
+                <h2><span>Mini-tools</span></h2>
+
+            </div>
+        </div>
+
+<div id="mini_tools">
+        <p><input class="old" type="text" placeholder="Старая цена" id="old"></p>
+        <p><input class="new" type="text" placeholder="Новая цена" id="new"></p>
+        <button class="btn" onclick="procent_in_top()">Вычеслить</button>
+        <hr>
+    <div style="display: flex; justify-content: center">
+        <div style="display: flex; color: lawngreen; font-size: 30px;"><p id="out">Процент: </p></div>
+        <div style="display: flex; color: lawngreen; font-size: 30px;"><p>%</p></div>
     </div>
-    <!--<p class="helloworld">Siriguy</p>-->
-
-
-    <div style="display:flex">
-        <img style="display: flex; padding-left: 35px; margin-bottom: 10px; padding-right: 5px "
-             src="img/md_5af2961470850.png" height="25" width="25"/>
-        <a href="https://www.instagram.com/siriguy_" id="social-networks">@ Siriguy_</a>
-    </div>
-
-</header>
-
-<div class="menu_container">
-
-    <div>
-        <a href="#" id="my_works">Mini - tools</a>
-    </div>
-
-    <div style="">
-        <a href="#" id="my_pictures">My photos</a>
-    </div>
-
-    <div>
-        <a href="#" id="about">About my life</a>
-    </div>
-
 </div>
-
-<div style="padding-top: 100px; padding-bottom: 25px;">
-    <div class="about-my-life-center">
-
-        <h2><span>Где я учусь</span></h2>
-
+<hr>
     </div>
 </div>
-
-<div id="styding">
-    <p style="font-size: 25px; font-family: 'Comfortaa', cursive;  padding: 0; margin: 10px">Я закончил 17 школу (лицей
-        попрошу) и захотел поступить в колледж <a href="http://csbc.edu.ua/">(Вот кстати сайт).</a> Учусь на втором
-        курсе IT. Поступил на компьютерного инженера. Хотел когда-то стать программистом но немного со временем отпало
-        желание.</p>
-</div>
-
-
-<div style="padding-top: 100px; padding-bottom: 25px;">
-    <div class="about-my-life-center">
-
-        <h2><span>Мои друзья</span></h2>
-
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<div class="my-friends_container">-->
-
-<!--<div class="marmishgor">-->
-<!--<img style="border-radius: 20%" src="img/marmishgor.jpg" height="350px" width="350px">-->
-<!--<a href="#" style="text-decoration: none; color: orange;"> <figcaption>@ marmishgor</figcaption> </a>-->
-<!--</div>-->
-
-<!--<div class="teisdomestio">-->
-<!--<img style="border-radius: 20%" src="img/teisdomestio.jpg" height="350px" width="450px">-->
-<!--<a href="#" style="text-decoration: none; color: orange;"> <figcaption>@ teis_angel / @ domestio</figcaption> </a>-->
-<!--</div>-->
-
-<!--<div class="andrei">-->
-<!--<img style="border-radius: 20%" src="img/povsten.jpg" height="450px" width="350px">-->
-<!--<a href="#" style="text-decoration: none; color: orange;"> <figcaption>@ andreipovsten</figcaption> </a>-->
-<!--</div>-->
-
-<!--</div>-->
 
 </body>
 
 </html>
+
