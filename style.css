@@ -1,20 +1,42 @@
+html {
+  min-height: 100%;
+  font-size: 10px;
+}
 body {
+  line-height: 1.4;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  position: relative;
   background: #ECE4CF;
   text-align: center;
-  margin: 0px auto;
-  padding: 0px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 35px;
+}
+a {
+  display: block;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #222;
 }
 #page {
   text-align: left;
   width: 1024px;
   height: 100%;
-  margin: 0px auto;
-  padding: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px 44px 15px;
   background: #FFFFFF;
   overflow: hidden;
-  padding-bottom: 44px;
 }
 #page2 {
   display: block;
@@ -33,27 +55,32 @@ body {
   height: 351px;
   width: 374px;
 }
-.about-my-life-center span {
+.about-my-life-center {
+  position: relative;
+  text-align: center;
   background: #fff;
-  padding: 0 10px;
+  padding: 0;
+  margin: 40px 0;
+}
+.about-my-life-center:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  left: 0;
+  top: 50%;
 }
 .about-my-life-center h2 {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #000;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  color: #404040;
+  background: #fff;
+  font-weight: 400;
+  padding: 0 35px;
+  margin: 20px 0;
 }
-/*.helloworld {*/
-/*display: flex;*/
-/*flex-direction: column;*/
-/*text-align: center;*/
-/*font-family: 'Anton', sans-serif;*/
-/*color: white;*/
-/*font-size: 50px;*/
-/*margin: 0;*/
-/*padding-top: 50px;*/
-/*}*/
 #social-networks {
   color: orange;
   height: auto;
@@ -73,24 +100,24 @@ body {
   padding: 50px;
   font-family: Anton;
   color: orange;
-  text-decoration: orange;
   width: auto;
   height: auto;
+  text-decoration: none;
 }
 #my_pictures:hover {
   color: blue;
   animation-delay: 3s;
   width: auto;
   height: auto;
-  transform: scale(0.7);
+  text-decoration: underline;
 }
 .about {
   padding: 50px;
   font-family: Anton;
   color: orange;
-  text-decoration: orange;
   width: auto;
   height: auto;
+  text-decoration: none;
 }
 .about:hover {
   color: blue;
@@ -102,15 +129,16 @@ body {
   padding: 50px;
   font-family: Anton;
   color: orange;
-  text-decoration: orange;
   width: auto;
   height: auto;
+  text-decoration: none;
 }
 #my_works:hover {
   color: blue;
   animation-delay: 3s;
   width: auto;
   height: auto;
+  text-decoration: underline;
 }
 .slick {
   display: flex;
@@ -137,6 +165,7 @@ body {
 }
 .flin {
   padding: 30px;
+  padding-top: 50px;
 }
 .flin:hover {
   transform: scale(1.1);
@@ -146,15 +175,22 @@ body {
   padding: 20px;
   background-color: lightblue;
   border-radius: 25%;
+  border: 1px solid transparent;
 }
 .study:hover {
-  border: 1px orange solid;
+  border: 1px solid orange;
 }
 .study-text {
   font-size: 25px;
   font-family: 'Comfortaa', cursive;
   padding: 0;
   margin: 10px;
+}
+.study-text a {
+  text-decoration: none;
+}
+.study-text a:hover {
+  text-decoration: underline;
 }
 #my_all_photo {
   background: url("img/my_photo.jpg");
@@ -183,19 +219,36 @@ body {
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
-.old {
-  height: 50px;
-  width: 200px;
+input[type="text"] {
+  color: #fff;
+}
+input[type="text"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+input {
+  font-size: 18px;
   text-align: center;
-  font-size: 25px;
+  height: 50px;
+  width: 225px;
+}
+input.old {
   border-radius: 20%;
   background: #f08080;
 }
-.new {
-  height: 50px;
-  width: 200px;
-  text-align: center;
-  font-size: 25px;
+input.new {
   border-radius: 20%;
   background: #f08080;
 }
@@ -207,4 +260,15 @@ body {
   border-radius: 20%;
   background: lawngreen;
 }
-/*# sourceMappingURL=style.css.map */
+.footer {
+  min-height: 150px;
+  width: 100%;
+  background: #222;
+  padding-top: 124px;
+}
+.footer .footer-text {
+  height: 150px;
+  width: 100%;
+  color: #fff;
+  font-size: 17px;
+}
